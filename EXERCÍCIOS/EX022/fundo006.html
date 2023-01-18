@@ -8,15 +8,23 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*auto, tamanho em pixels, contain (mostrar toda a imagem), cover (mostrar tudo)*/
+            background-size: cover; auto, tamanho em pixels, contain (mostrar toda a imagem), cover (mostrar tudo)
+            background-attachment: fixed; padrão: scroll, fixed: fundo fixo*/
+           
+           
+            /*shorthand - backgrond - ordem:display:
+            color > image > position > repeat > [size] > attachment;*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+            /*o cover tem q ser fora - mas era pra funcionar*/
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             margin: auto;
             padding: 10px;
             border-radius: 15px;
@@ -29,6 +37,10 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat veritatis est laboriosam reiciendis fugit nemo qui explicabo. Cumque dicta nam rerum animi ipsa aliquam ipsum quod cupiditate eaque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore aperiam id maiores vitae. Accusamus officiis nostrum in accusantium rerum ea optio est voluptatum, facilis, perferendis eaque reiciendis quidem eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laborum magni nemo libero nesciunt possimus omnis laboriosam exercitationem hic sunt illum, amet commodi vero, voluptatum in! Quos aspernatur laudantium soluta!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat veritatis est laboriosam reiciendis fugit nemo qui explicabo. Cumque dicta nam rerum animi ipsa aliquam ipsum quod cupiditate eaque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore aperiam id maiores vitae. Accusamus officiis nostrum in accusantium rerum ea optio est voluptatum, facilis, perferendis eaque reiciendis quidem eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laborum magni nemo libero nesciunt possimus omnis laboriosam exercitationem hic sunt illum, amet commodi vero, voluptatum in! Quos aspernatur laudantium soluta!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat veritatis est laboriosam reiciendis fugit nemo qui explicabo. Cumque dicta nam rerum animi ipsa aliquam ipsum quod cupiditate eaque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore aperiam id maiores vitae. Accusamus officiis nostrum in accusantium rerum ea optio est voluptatum, facilis, perferendis eaque reiciendis quidem eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laborum magni nemo libero nesciunt possimus omnis laboriosam exercitationem hic sunt illum, amet commodi vero, voluptatum in! Quos aspernatur laudantium soluta!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat veritatis est laboriosam reiciendis fugit nemo qui explicabo. Cumque dicta nam rerum animi ipsa aliquam ipsum quod cupiditate eaque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore aperiam id maiores vitae. Accusamus officiis nostrum in accusantium rerum ea optio est voluptatum, facilis, perferendis eaque reiciendis quidem eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laborum magni nemo libero nesciunt possimus omnis laboriosam exercitationem hic sunt illum, amet commodi vero, voluptatum in! Quos aspernatur laudantium soluta!</p>
+
     </main>
 </body>
 </html>
