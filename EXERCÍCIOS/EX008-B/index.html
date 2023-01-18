@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <hr>
+    <br>
+    <h2>Código fonte</h2>
+    <p>O comando <code>documento.getElementByld('teste')</code> é escrito em liguagem JAVAscript.</p>
+    <!--a tag <code> serve pra deixar as lestras com um espaçamento igual entre elas-->
+    <pre>
+        <code>
+x = 2
+if x%2 == 0:
+    print ('Par')
+else:
+    print ("Ímpar")
+        </code>
+    </pre>
+    <!--NA tag <pre>  Espaços em branco são mantidos no texto da mesma forma em que este foi digitado, ou seja, ele pula linha uqnado pulamos na digitação, ótimo pra printa códigos.-->
+    <h2>Citações</h2>
+    <h3>Simples</h3>
+    <p>Como diria meu primo: <q>É melhor morrer do que perder a vida</q>.</p>
+    <!--A tag <q> é usado pra colocar aspas onde é importante, se não é só usar as normais, é a citação simples-->
+    <h3>Completas</h3>
+    <p>Segundo  Antoine de Saint-exupéry em seu livro O Pequeno Príncipe:</p>
+    <blockquote cite = "https://www.google.com.br/books/edition/O_Pequeno_Pr%C3%ADncipe/9ZNFEAAAQBAJ?hl=pt-BR&gbpv=0">
+        É preciso que eu suporte duas ou três larvas se quiser conhecer as borboletas.
+    </blockquote>
+    <!--A tag acima serve para da mais enfase a uma citação colocando-a em outras linhas, é a citação simples-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <!--É possivel explicar aos leitores o signifacado as abreviaçãoes presentes no texto usando <abbr>,é nescessario colocar a explicação entre as aspas do title-->
+        <h2>Texto invertido (serve de nada, &lt;bdo&gt;)</h2>
+        <p><bdo dir="rtl">Estou estudando HTML5</bdo></p>
+</body>
+</html>

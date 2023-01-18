@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente/diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/c.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/b.png" type="image/png">
+        <img src="imagens/a.png" alt="Imagem flexível">
+    </picture>
+    <!--O source para a menor imagem deve ser o primeiro e a maior imagem deve ser a primeira.-->
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a Reproduzir audios em HTML</p>
+    <!--Usando a tag <audio> é a mais básica-->
+    <!--<audio src="midia/WhatsApp Audio 2023-01-07 at 09.34.27.mpeg" controls autoplay></audio>-->
+    <!--MP3, WAV OG-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/WhatsApp Audio 2023-01-07 at 09.34.27.mpeg" type="audio/mpeg">
+        <p>Infelismente seu navegador não suporta esse arquivo. <a href="midia/WhatsApp Audio 2023-01-07 at 09.34.27.mpeg">Clique aqui para baixa-lo.</a> </p>
+    </audio>
+</body>
+</html>

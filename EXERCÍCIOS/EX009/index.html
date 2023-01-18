@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com lista</h1>
+    <hr><br>
+    <h2>Lista Ordenadas</h2>
+    <ol type="1"> <!--1 (padrão),a,A,I,i-->
+        <li>Acordar</li>
+        <li>Ligar pra minha Mãe</li>
+        <li>Levantar da cama</li>
+        <li>Tomar café</li>
+        <li>Ir para o onibus</li>
+        <li>Ir para o <abbr title="Instituto Federal da Paraíba">IFPB</abbr></li>
+        <li>Almoçar</li>
+        <li>Estudar</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <!--A tag <ol> é usada pra vriar listas ordenadas, e <li> é usado para inetificar a posição do item na lista
+    usando o parametro type dentro do <ol> é possivel definir como vai andar a lista utilizando: 1,2,3 ou a,b,c por exemplo.
+        podemos utilizar o "start" para mostrar de onde a lista deve começar a contar.-->
+    <h2>Listas Não ordenadas (Não precisa ter sentido)</h2>
+    <!--A tag <ol> é usada pra vriar listas NÃO ordenadas, e <li> é usado para inetificar a posição do item na lista
+    usando o parametro type dentro do <ul>: -->
+    <ul type = "disc"> <!--disc (padrão),ciecle e square-->
+        <li>Sair</li>
+        <li>Estudar</li>
+        <li>Tomar café</li>
+        <li>Dormir</li>
+    </ul>
+    <hr>
+    <h1>Listas mistas e de definições</h1>
+    <br>
+    <h2>Minhas liguagens favoritas</h2>
+    <ol>
+        <li><b>Antigas</b></li>
+        <ol type="a">
+            <li>Python</li>
+            <li>PHP</li>
+        </ol>
+        <li><b>Novas</b></li>
+        <ol type="a" start="3">
+            <li>HTML5</li>
+            <li>CSS 3</li>
+        </ol>
+    </ol>
+    <h2>Meus video games Favorito</h2>
+    <ol>
+        <li>Game boy</li>
+        <ul>
+            <li>Pokemon Fire red</li>
+            <li>Pokemon emerald</li>
+            <li>Thelegend of zelda</li>
+        </ul>
+        <li>Playstation</li>
+        <ul>
+            <li>Bomba patch</li>
+            <li>GTA</li>
+            <ul>
+                <li>San Andreas</li>
+                <li>Vice city</li>
+            </ul>
+            <li>Mortal Kombat</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <!--É usado a tag <dl> para sua criação, usamos a tag <dt> pra criar o termo e a tag <dd> para dá sua definição-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Limguagem de marcação para criaçãode conteudo em um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguafem de marcação para a criação de designe em um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Liguagem de programação para criar interatividade em um site</dd>
+    </dl>
+</body>
+</html>
