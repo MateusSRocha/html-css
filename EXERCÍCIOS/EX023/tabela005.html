@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            border: 2px solid dodgerblue;
+        }
+        thead {
+            background-color: rgba(0, 206, 209, 0.808);
+            color: rgb(0, 83, 83);
+        }
+        td {
+            border: 0px solid dodgerblue;
+            padding: 10px;
+            border-bottom: 1px;
+            
+        }
+        th {
+            border: 1px initial dodgerblue;
+            padding: 10px;
+        }
+        caption {
+            background-color: dodgerblue;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        tbody > tr:nth-child(odd) { /*Zebrando usando sub-classe, usando (odd/2n-1: pinta as cceluas pares) e (even/2n: pinta as celulas impares).*/
+            background-color: rgba(173, 216, 230, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <!--Não tem nescecidade de criar um pra cada por exemplo, se quisermos que sexo e idade tenham a mesma cor basta usar span com 2-->
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria Das Graças</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Faxineira</td>
+            </tr>
+            <tr>
+                <td>Mateus</td>
+                <td>M</td>
+                <td>15</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>45</td>
+                <td>Agricultor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>71</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Ana Julia</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Atriz</td>
+            </tr>
+            <tr>
+                <td>José Ruan</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Jogador</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
