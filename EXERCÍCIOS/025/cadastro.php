@@ -1,2 +1,5 @@
-Os dados foram enviados aprenda PHP para 
-saber oq fazer com eles
+OS DADOS FORAM ENVIADOS, APRENDA PHP PARA SABER O QUE FAZER ELE.
+
+
+
+OBRIGADO PELA ATENÇÃO!!!
