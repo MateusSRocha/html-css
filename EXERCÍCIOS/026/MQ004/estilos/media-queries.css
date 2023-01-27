@@ -10,6 +10,33 @@
 */
 
 @media print {/*IMPRESSORA*/
+    body {
+        background-image: url(../imagens/back-print.jpg); /*Desnecessário*/
+        
+    }
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+
+    }
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after {
+        text-align: center;
+        content: 'Site que eu criei';
+        text-decoration: overline;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display:none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
     
 }
 
@@ -39,6 +66,9 @@
 /*GRANDES TELAS*/
     body {
         background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 800px;
     }
     img#phone {display: none;}
     img#tablet {display: none;}
