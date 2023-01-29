@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <ul>
+                <li><a href="@">Home</a></li>
+                <li><a href="@">Contas Bancárias</a></li>
+                <li><a href="@">Notícias</a></li>
+                <li><a href="@">Minha Conta</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+       <section>
+           <div id="formulario">
+               <h1>login</h1>
+               <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+               <form action="login.php" method="get">
+                <div class="campo">
+                    <label for="iemail">E-mail</label> <br>
+                    <input type="email" name="email" id="iemail" required maxlength="30" placeholder="Seu e-mail">
+                </div>
+                <div class="campo">
+                    <label for="isenha">Senha</label> <br>
+                    <input type="email" name="senha" id="isenha" required minlength="8" placeholder="Sua senha">
+                </div>
+                <input type="submit" value="Entrar">
+                <a href="esqueci.html" class="botao">
+                    Esqueci a senha <span class="material-icons">mail</span>
+                </a>
+               </form>
+           </div>
+       </section>
+    </main>
+</body>
+</html>
